@@ -35,7 +35,7 @@ class Picker(object):
     :param multi_select_background_color: (optional) background color of a selected option within multi_select mode
     """
 
-    def __init__(self, options, title=None, indicator='*', default_index=0, multi_select=False, min_selection_count=0, options_map=None, multi_select_foreground_color='COLOR_GREEN', multi_select_background_color='COLOR_WHITE'):
+    def __init__(self, options, title=None, indicator='*', default_index=0, multi_select=False, min_selection_count=0, options_map=None, multi_select_foreground_color='COLOR_GREEN', multi_select_background_color='COLOR_WHITE', pre_select=[]):
 
         if len(options) == 0:
             raise ValueError('options should not be an empty list')
@@ -46,7 +46,7 @@ class Picker(object):
         self.multi_select = multi_select
         self.min_selection_count = min_selection_count
         self.options_map = options_map
-        self.all_selected = []
+        self.all_selected = pre_select
 
         if default_index >= len(options):
             raise ValueError('default_index should be less than the length of options')

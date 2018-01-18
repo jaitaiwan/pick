@@ -9,26 +9,21 @@ def fread(fname):
         return fp.read()
 
 setup(
-    name='pick',
-    version='0.6.5',
+    name='pick2',
+    version='0.7.0',
     description='pick an option in the terminal with a simple GUI',
     long_description=fread('README.md'),
     keywords='terminal gui',
     url='https://github.com/wong2/pick',
-    author='wong2',
-    author_email='wonderfuly@gmail.com',
+    author='jaitaiwan',
+    author_email='dan@djcentric.com',
     license='MIT',
-    packages=['pick'],
+    packages=['pick2'],
     tests_require=['nose'],
     classifiers=[
-        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5'
+        'Programming Language :: Python :: 3.6'
     ]
 )
