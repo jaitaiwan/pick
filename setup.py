@@ -10,7 +10,7 @@ def fread(fname):
 
 setup(
     name='pick2',
-    version='0.7.0',
+    version='0.7.1',
     description='pick an option in the terminal with a simple GUI',
     long_description=fread('README.md'),
     keywords='terminal gui',
